@@ -1,9 +1,31 @@
+
+.hero-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.trevorsbirding.com/wp-content/uploads/2018/10/DSCN0990.jpg");
+	height: 55vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.hero-text {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	font-size: 160%;
+
+}
+
+
+
 .boxes {
 	display: flex;
 	/*justify-content: space-between;*/
 	flex-wrap: wrap;
 	margin-right: 20vw;
 	margin-left: 25vw;
+	min-width: 200px;
 	}
 
 .box {
@@ -16,21 +38,21 @@
 
 .box:hover{
 	opacity: 0.5;
+	transform: scale(1.01);
 	transition: all 0.2s;
 	
 }
-.slidein {
+.hova {
+	cursor: default;
+	margin: 10px 0;
+	transform: translateY(0%);	
 	text-align: center;
-	font-size: 80px;
+	font-size: 72px;
+	transition: all 1s;
 	opacity: 0;
 
 }
-.slidein:hover {
-	opacity: 1;	
-	transform: translateY(20%);
-	transition: all 2s;
 
-}
 .one {
 
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4e/Ocyphaps_lophotes_-_Lake_Parramatta_Reserve.jpg");
@@ -89,4 +111,12 @@ footer {
 	padding: 0;
 	width: 100%;
 	height: 20vh;
+}
+
+.fa-solid {
+	transform: scaleY(-1);
+	
+}
+h6 {
+	text-align: center;
 }
